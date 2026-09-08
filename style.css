@@ -8,7 +8,7 @@
 }
 
 header {
-    border: 1px solid;
+    /* border: 1px solid; */
     position: fixed;
     width: 100%;
     background-color: white;
@@ -75,9 +75,113 @@ nav {
 
 .hero {
     min-height: 40dvh;
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 70%;
+    margin: 100px auto 40px;
+    text-align: center;
+}
+
+.hero>h1 {
+    font-size: 59.752px;
+}
+
+.hero>p {
+    font-size: 24px;
+}
+
+.card-section {
+    min-height: 40dvh;
+    border: 1px dashed red;
+    width: 96%;
     margin: auto;
-    background-color: #ED1C24;
-    margin-top: 60px;
+}
+
+.card-section .container {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-section .card {
+    border: 1px solid;
+    height: 500px;
+    width: 32%;
+    border-radius: 10px;
+}
+
+.card-img {
+    height: 60%;
+    /* border: 1px solid red; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-img-box {
+    width: 100%;
+    /* border: 1px solid white; */
+    padding: 20px;
+}
+
+.card-img-box h2 {
+    font-size: 36px;
+    color: white;
+    margin-top: 10px;
+}
+
+.card-body {
+    padding: 20px;
+    border: 1px solid red;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-text {
+    /* border: 1px solid red; */
+    font-size: 20px;
+    height: 20dvh;
+    line-height: 28px;
+}
+
+.card-link {
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    background-color: RGBA(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.card-link .bi-chevron-right {
+    font-size: 10px;
+}
+
+.card:nth-child(1) {
+    background-color: #EE8695;
+}
+
+.card:nth-child(2) {
+    background-color: #E09396;
+}
+
+.card:nth-child(3) {
+    background-color: #CFE8FF;
+}
+
+.card:nth-child(1) .card-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)), url("https://d23yw4k24ca21h.cloudfront.net/assets/landing_pages/case_studies/cincinnati_cyclones/hero-704-5f7aa247530ee67471e6861fcc797fb1b18b531503235bf46eba6a5216a0e628.webp");
+}
+
+.card:nth-child(2) .card-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)), url("https://d23yw4k24ca21h.cloudfront.net/assets/landing_pages/case_studies/defqon_1/hero-704-cdec1e672285ae4565ff50a5a9b7c3bcb175424ef78d5df21af70b609043546e.webp");
+}
+
+.card:nth-child(3) .card-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)), url("https://d23yw4k24ca21h.cloudfront.net/assets/landing_pages/case_studies/nycfc/hero-1408-5c5c1f4496043a218daa9992a8d40b661cd3c9be17edd1ac6bed3283dd17c7e2.webp");
 }
