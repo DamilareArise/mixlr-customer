@@ -73,6 +73,16 @@ nav {
     opacity: 0.8;
 }
 
+.menu {
+    display: none;
+}
+
+.bi-list {
+    font-size: 2rem;
+}
+
+/* Hero section design */
+
 .hero {
     min-height: 40dvh;
     /* border: 1px solid; */
@@ -89,9 +99,11 @@ nav {
     font-size: 24px;
 }
 
+/* Card section design */
+
 .card-section {
     min-height: 40dvh;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     width: 96%;
     margin: auto;
 }
@@ -100,13 +112,16 @@ nav {
     /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card-section .card {
-    border: 1px solid;
+    /* border: 1px solid; */
     height: 500px;
     width: 32%;
     border-radius: 10px;
+    margin-bottom: 20px;
+
 }
 
 .card-img {
@@ -133,7 +148,7 @@ nav {
 
 .card-body {
     padding: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 40%;
     display: flex;
     flex-direction: column;
@@ -174,6 +189,18 @@ nav {
     background-color: #CFE8FF;
 }
 
+.card:nth-child(4) {
+    background-color: #EE8695;
+}
+
+.card:nth-child(5) {
+    background-color: #E09396;
+}
+
+.card:nth-child(6) {
+    background-color: #CFE8FF;
+}
+
 .card:nth-child(1) .card-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)), url("https://d23yw4k24ca21h.cloudfront.net/assets/landing_pages/case_studies/cincinnati_cyclones/hero-704-5f7aa247530ee67471e6861fcc797fb1b18b531503235bf46eba6a5216a0e628.webp");
 }
@@ -184,4 +211,86 @@ nav {
 
 .card:nth-child(3) .card-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)), url("https://d23yw4k24ca21h.cloudfront.net/assets/landing_pages/case_studies/nycfc/hero-1408-5c5c1f4496043a218daa9992a8d40b661cd3c9be17edd1ac6bed3283dd17c7e2.webp");
+}
+
+.card:nth-child(4) .card-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)), url("https://d23yw4k24ca21h.cloudfront.net/assets/landing_pages/case_studies/nycfc/hero-1408-5c5c1f4496043a218daa9992a8d40b661cd3c9be17edd1ac6bed3283dd17c7e2.webp");
+}
+
+.card:nth-child(5) .card-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)), url("https://d23yw4k24ca21h.cloudfront.net/assets/landing_pages/case_studies/nycfc/hero-1408-5c5c1f4496043a218daa9992a8d40b661cd3c9be17edd1ac6bed3283dd17c7e2.webp");
+}
+
+.card:nth-child(6) .card-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)), url("https://d23yw4k24ca21h.cloudfront.net/assets/landing_pages/case_studies/nycfc/hero-1408-5c5c1f4496043a218daa9992a8d40b661cd3c9be17edd1ac6bed3283dd17c7e2.webp");
+}
+
+
+.practice {
+    width: 50%;
+    background-color: #ED1C24;
+    height: 300px;
+    margin: 40px auto;
+}
+
+
+
+/* 0 - 500px mobile */
+/* 500px - 900px tablet */
+/* 900px  */
+
+@media screen and (max-width: 900px) {
+    .practice {
+        width: 70%;
+        background-color: #CFE8FF;
+    }
+
+    .nav-ul {
+        display: none;
+    }
+
+    .getstarted-btn {
+        margin-left: auto;
+    }
+
+    .menu {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .hero {
+        min-height: 10dvh;
+        /* border: 1px solid; */
+        width: 80%;
+    }
+
+    .hero>h1 {
+        font-size: 40px;
+    }
+
+    .card-section .card {
+        width: 49%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .practice {
+        width: 90%;
+        background-color: green;
+    }
+
+    .hero>h1 {
+        font-size: 30px;
+    }
+
+    .hero>p {
+        font-size: 1.1rem;
+    }
+
+    .card-section .card {
+        width: 100%;
+    }
 }
