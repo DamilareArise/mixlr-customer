@@ -27,7 +27,7 @@ nav {
 }
 
 .nav-ul {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     width: 42%;
     justify-content: space-between;
