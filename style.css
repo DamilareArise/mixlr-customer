@@ -138,6 +138,12 @@ nav {
     width: 100%;
     /* border: 1px solid white; */
     padding: 20px;
+    filter: grayscale(100%);
+}
+
+.card-img-box:hover{
+    filter: grayscale(0);
+
 }
 
 .card-img-box h2 {
