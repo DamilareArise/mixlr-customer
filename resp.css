@@ -83,3 +83,109 @@
     background-color: yellow;
     grid-column: 1/4;
 }
+
+
+.container3 {
+    border: 1px solid;
+    width: 90%;
+    margin: 40px auto;
+    min-height: 90dvh;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    gap: 10px;
+}
+
+.container3>div {
+    background-color: gray;
+    box-shadow: .5px .5px 1px 1px;
+}
+
+.ranking {
+    grid-column: 1/17;
+}
+
+.site-audit {
+    grid-column: 17/25;
+}
+
+.google {
+    grid-column: 1/6;
+    grid-row: 2/5;
+}
+
+.google-change {
+    grid-column: 1/6;
+    grid-row: 5/8;
+}
+
+.google-chart {
+    grid-column: 6/17;
+    grid-row: 2/8;
+}
+
+.crawl {
+    grid-column: 17/25;
+    grid-row: 2/8;
+}
+
+.backlinks {
+    grid-column: 1/17;
+}
+
+.errors {
+    grid-column: 17/21;
+    grid-row: 8/10;
+}
+
+.warnings {
+    grid-column: 21/25;
+    grid-row: 8/10;
+}
+
+.trust-flow {
+    grid-column: 1/5;
+    grid-row: 9/12;
+}
+
+.trust-link {
+    grid-column: 5/9;
+    grid-row: 9/12;
+}
+
+.citation {
+    grid-column: 1/5;
+    grid-row: 12/15;
+}
+
+.follow-link {
+    grid-column: 5/9;
+    grid-row: 12/15;
+}
+
+.lost-link {
+    grid-column: 9/17;
+    grid-row: 9/15;
+}
+
+.issues {
+    grid-column: 17/25;
+    grid-row: 10/15;
+}
+
+
+.container4 {
+    border: 1px solid;
+    width: 90%;
+    margin: 40px auto;
+    min-height: 90dvh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background-color: gray;
+    box-shadow: .5px .5px 1px 1px;
+    min-height: 500px;
+}
