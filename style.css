@@ -15,6 +15,7 @@ header {
     /* top: 100px; */
     /* bottom: 0; */
     top: 0;
+    z-index: 10;
 }
 
 nav {
@@ -27,7 +28,7 @@ nav {
 }
 
 .nav-ul {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     width: 42%;
     justify-content: space-between;
@@ -38,6 +39,7 @@ nav {
 
 .nav-link {
     list-style-type: none;
+    position: relative;
 }
 
 .nav-link>a {
@@ -80,6 +82,65 @@ nav {
 .bi-list {
     font-size: 2rem;
 }
+
+
+.dropdown {
+    list-style-type: none;
+    background-color: white;
+    position: absolute;
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    gap: 10px;
+    box-shadow: 0.1px 0.1px 1px .1px;
+    border-radius: 5px;
+    padding: 7px;
+    top: 20px;
+    transition: all 1s;
+    opacity: 0;
+    /* visibility: hidden; */
+    max-height: 0;
+    overflow: hidden;
+
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown a:hover {
+    color: #ED1C24;
+}
+
+.dropdown li {
+    /* display: none; */
+    /* height: 0; */
+}
+
+.solution-link:hover {
+    .dropdown1 {
+        /* display: flex; */
+        opacity: 1;
+        /* visibility: visible; */
+        max-height: 300px;
+    }
+
+    .dropdown li {
+        /* display: block; */
+    }
+}
+
+.use-cases:hover .dropdown2 {
+    /* display: flex; */
+    /* visibility: visible; */
+
+    opacity: 1;
+    max-height: 300px;
+}
+
+
 
 /* Hero section design */
 
@@ -141,7 +202,7 @@ nav {
     filter: grayscale(100%);
 }
 
-.card-img-box:hover{
+.card-img-box:hover {
     filter: grayscale(0);
 
 }

@@ -127,3 +127,105 @@
         width: 90%;
     }
 }
+
+
+
+
+.container3 {
+    height: 50dvh;
+    width: 50vw;
+    border: 1px solid;
+    margin: 50px auto;
+}
+
+.boxx {
+    height: 120px;
+    width: 120px;
+    background: coral;
+    animation-name: roundabout;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: backwards; */
+
+}
+
+.container3:hover .boxx {
+    animation-play-state: paused;
+}
+
+
+@keyframes to-fro {
+    from {
+        /* translate: 0; */
+        scale: .3;
+    }
+
+    to {
+        /* translate: 200px; */
+        scale: 1;
+    }
+}
+
+@keyframes roundabout {
+    0% {
+        translate: 0;
+    }
+
+    25% {
+        translate: calc(50vw - 120px);
+    }
+
+    50% {
+        translate: calc(50vw - 120px) calc(50dvh - 120px);
+    }
+
+    75% {
+        translate: 0 calc(50dvh - 120px);
+    }
+
+    100% {
+        translate: 0;
+    }
+}
+
+
+
+.container4 {
+
+    width: 50vw;
+    border: 1px solid;
+    margin: 50px auto;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.container4>.card {
+    height: 300px;
+    width: 300px;
+    background-color: grey;
+    flex-shrink: 0;
+    font-size: 3rem;
+    align-content: center;
+    text-align: center;
+    color: white;
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    /* animation-fill-mode: both; */
+
+}
+
+@keyframes slider {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: calc(50vw - 230px);
+    }
+}
