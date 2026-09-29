@@ -12,13 +12,107 @@
 
 <body>
 
-    <h1 class="border border-bottom border-black mt-5 welcome /text-bg-dark text-black-50 px-5">
+    <h1 class="border border-bottom border-black mt-5 welcome /text-bg-dark text-black-50 px-5 text-center">
         Welcome to
         Bootstrap class
     </h1>
 
-    <div class="box border border-dark /rounded-circle m-auto my-5 /w-75 col-2">
+    <div class="box border border-2 border-dark  /col-11 /col-md-9 /col-lg-7 /m-auto container">
+        <div class="row /justify-content-between">
+            <div class="coll col-12 col-md-6 col-lg-3 border border-black bg-danger"></div>
+            <div class="coll col-12 col-md-6 col-lg-3 border border-black bg-danger"></div>
+            <div class="coll col-12 col-md-6 col-lg-3 border border-black bg-danger"></div>
+            <div class="coll col-12 col-md-6 col-lg-3 border border-black bg-danger"></div>
+            <div class="coll col-12 col-md-6 col-lg-3 border border-black bg-danger"></div>
+            <div class="coll col-12 col-md-6 col-lg-3 border border-black bg-danger"></div>
+            <div class="coll col-12 col-md-6 col-lg-3 border border-black bg-danger"></div>
+            <div class="coll col-12 col-md-6 col-lg-3 border border-black bg-danger"></div>
+            <div class="coll col-12 col-md-6 col-lg-3 border border-black bg-danger"></div>
+        </div>
 
+    </div>
+
+    <div class="container my-3">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>@social</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <form action="" class="col-10 col-md-4 m-auto my-3 border shadow p-3 rounded">
+            <input type="text" placeholder="Fullname" class="form-control mb-2 shadow-none">
+            <input type="email" placeholder="Email" class="form-control mb-2">
+            <input type="password" placeholder="Password" class="form-control mb-2">
+            <input type="checkbox" class="form-check">
+            <button class="btn btn-outline-success">Submit</button>
+        </form>
+
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+           
+        </div>
     </div>
 
 

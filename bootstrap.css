@@ -4,6 +4,11 @@
 
 
 .box {
-    height: 200px;
+    min-height: 200px;
     /* width: 200px; */
+}
+
+.coll {
+    height: 300px;
+    /* width: 300px; */
 }
