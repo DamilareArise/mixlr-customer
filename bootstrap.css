@@ -12,3 +12,15 @@
     height: 300px;
     /* width: 300px; */
 }
+
+
+
+.d-block {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
